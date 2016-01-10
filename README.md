@@ -10,4 +10,5 @@ join() 与 setDaemon 的区别
 2. setDaemon设置守护
   主线程A中，创建了子线程B，并且在主线程A中调用了B.setDaemon(),这个的意思是，把主线程A设置为守护线程，这时候，要是主线程A执行结束了，就不管子线程B是否完成,一并和主线程A退出.这就是setDaemon方法的含义，这基本和join是相反的。
   
-3.threading.Thread(target=movie,args=('My Movice',)) args中最后加了一个逗号，这个逗号加上之后，程序执行就可以看到线程中的print信息。
+
+3. threading.Thread(target=movie,args=('My Movice',)) args中最后加了一个逗号，这个逗号加上之后，程序执行就可以看到线程中的print信息。
